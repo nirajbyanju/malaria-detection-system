@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Malaria detection system Using CNN and OpenCV</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+	<div class="container" id="container">
+		<div class="form-container log-in-container">
+			<form method="post" action="/add-user">
+        <img src="{{url_for('static', filename='image/lotus.webp')}}">
+				<h1>Wel-come to the Malaria Detection System</h1>
+				<div class="data-entry">
+          <label>User Name </label>
+          <input type="text" name="uname" placeholder="User Name" />
+          <label>User Email Id </label>
+          <input type="email" name="uemail" placeholder="Email" />
+          <label>Password </label>
+          <input type="password" name="upassword" placeholder="Password" />
+          <a href="/">Log in ?</a>
+        </div>
+				
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+          <img src="{{url_for('static', filename='image/malaria.png')}}" alt="">
+					<h1>Common symptoms of malaria</h1>
+					<p>common symptoms of malaria include high fever, chills, fatigue, headaches, muscle and body aches, nausea, vomiting, abdominal pain, anemia, and in severe cases, jaundice and cognitive symptoms. Prompt medical attention is necessary for diagnosis and treatment.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

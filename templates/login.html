@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Malaria detection system Using CNN and OpenCV</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+	<div class="container" id="container">
+		<div class="form-container log-in-container">
+			<form method="post" action="/login_validation">
+        <img src="{{url_for('static', filename='image/lotus.webp')}}">
+				<h1>Wel-come to the Malaria Detection System</h1>
+				<div class="data-entry">
+          <label>User Email Id </label>
+          <input type="email" name="email" placeholder="Email" />
+          <label>Password </label>
+          <input type="password" name="password" placeholder="Password" />
+          <a href="/register">New Registration ?</a>
+        </div>
+				
+				<button type="submit">Log In</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+          <img src="{{url_for('static', filename='image/malaria2.png')}}" alt="">
+					<h1>Malaria Detection System Using CNN and OpenCV</h1>
+					<p>The Malaria Detection System utilizes Convolutional Neural Networks (CNN) and 
+            OpenCV to automate the identification of malaria parasites in microscopic blood smear images.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
